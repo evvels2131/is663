@@ -1,0 +1,21 @@
+{
+  "name": "is663",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Tom <tgoralczyk1@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/evvels2131/is663",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "^5.0.0",
+    "roboto-fontface": "^0.6.0"
+  }
+}

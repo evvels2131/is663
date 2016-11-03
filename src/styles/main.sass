@@ -15,9 +15,26 @@ body
   margin: 0 auto
 
 .main-row-1
-  height: 100px
+  height: 125px
   background-image: linear-gradient(to top right, $red-light 60%, #41110C)
   border-bottom: 1px solid $white
+
+  .content
+    display: flex
+    color: $white
+    letter-spacing: .25em
+
+    .col-1
+      flex-grow: 1
+      font-size: 1.2em
+      padding-top: 15px
+
+    .col-2
+      flex-grow: 1
+      padding-top: 5px
+      line-height: .25em
+      text-align: right
+
 
 .main-row-2
   height: 50px

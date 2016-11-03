@@ -35,10 +35,30 @@ body
       line-height: .25em
       text-align: right
 
-
 .main-row-2
-  height: 50px
+  height: 60px
   background-color: $red-dark
+
+  .content
+    display: flex
+    color: white
+    letter-spacing: .15em
+
+    p
+      margin: 10px
+
+    .col
+      flex-grow: 1
+      background-color: $red-light
+      text-align: center
+      margin: 10px 50px 5px 50px
+      border: 1px solid white
+      border-radius: .5em 1em .5em 1em
+      transition: transform 0.15s ease-in-out
+
+      &:hover
+        cursor: pointer
+        transform: scale(1.2) translateY(.75em)
 
 .main-row-3
   height: 300px

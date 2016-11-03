@@ -39,6 +39,7 @@ gulp.task('sass', function() {
 gulp.task('serve', ['pug', 'sass'], function() {
   browserSync.init({
     server: './dist',
+    open: false
   });
 
   gulp.watch(paths.pug, ['pug']);

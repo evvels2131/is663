@@ -53,7 +53,7 @@ body
       text-align: center
       margin: 10px 50px 5px 50px
       border: 1px solid white
-      border-radius: .5em 1em .5em 1em
+      border-radius: .5em
       transition: transform 0.15s ease-in-out
 
       &:hover
@@ -66,42 +66,17 @@ body
   margin-top: 25px
 
   .content
-    display: flex
+    text-align: center
+    position: relative
 
-    .col-1
-      flex-grow: 1
-      padding-top: 150px
+    img
+      width: 350px
 
-      .btn
-        text-align: center
-        background-color: $blue
-        color: $white
-        letter-spacing: 0.20em
-        font-size: 1.1em
-        width: 80%
-        margin: 15px auto
-        border: 2px outset $blue
-        border-radius: 5px
-        transition: transform 0.15s ease-in-out
-
-        &:hover
-          cursor: pointer
-          transform: translateX(5em)
-
-    .col-2
-      flex-grow: 2
-      text-align: center
-      position: relative
-
-      img
-        width: 350px
-
-      .phone-screen
-        position: absolute
-        top: 104px
-        left: 120px
-        width: 305px
-        height: 531px
-        background-color: yellow
-        border: 1px solid black
-        border-radius: 5px
+    iframe
+      position: absolute
+      top: 104px
+      left: 328px
+      width: 305px
+      height: 531px
+      border: 1px solid black
+      border-radius: 5px

@@ -1,9 +1,10 @@
 doctype html
 html(lang='en')
   head
-    title IS 663 - GETTECH
     meta(charset='utf-8')
     meta(name='viewport' content='width=device-width, initial-scale=1')
+
+    title IS 663 - GETTECH
 
     link(rel='stylesheet' href='libs/normalize-css/normalize.css')
     link(rel='stylesheet' href='libs/roboto-fontface/css/roboto/roboto-fontface.css')
@@ -19,10 +20,10 @@ html(lang='en')
             h1 GETTECH
           .col-2
             p Goralczyk, Tomasz
-            p Ragsdale, Tory
             p Nayak, Tanuka
-            p Chhabriya, Lakhan
             p Sathe, Mukta
+            p Ragsdale, Tory
+            p Chhabriya, Lakhan
 
     .main-row-2
       .container
@@ -38,16 +39,5 @@ html(lang='en')
     .main-row-3
       .container
         .content
-          .col.col-1
-            #customer-nav
-              .btn
-                p Registration
-              .btn
-                p Search for Service Providers
-              .btn
-                p Schedule a Service
-
-          .col.col-2
-            .phone-screen
-
-            img(src='img/apple-iphone-5s.svg' alt='iphone 5 image')
+          iframe(src='customer/index.html')
+          img(src='img/apple-iphone-5s.svg' alt='iphone 5 image')

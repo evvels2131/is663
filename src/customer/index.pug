@@ -8,35 +8,90 @@ html(lang='en')
 
     title Customer
 
+    link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
     link(rel='stylesheet' href='../libs/Framework7/dist/css/framework7.ios.min.css')
     link(rel='stylesheet' href='../libs/Framework7/dist/css/framework7.ios.colors.min.css')
 
   body
-    .statusbar-overlay
+    .views
+      .view.view-main
+        .pages
+          div(data-page='index' class='page navbar-fixed toolbar-fixed')
 
-    .panel-overlay
+            .navbar
+              .navbar-inner
+                .center Service Providers
 
-    .panel.panel-left.panel-reveal
-      .content-block
-        p Left panel content goes here
+            .page-content
+              .content-block-title Nearby
+              .list-block.media-list
+                ul
+                  li
+                    a(href='#' class='item-link item-content')
+                      .item-inner
+                        .item-title-row
+                          .item-title Orada Tech: Phone Repair
+                          .item-after 0.8m
+                        .item-subtitle 82 Bethany Rd, Hazlet, NJ 07730
+                        .item-text We specialize in repairing mobile phones including Water Damage is a common...
+                  li
+                    a(href='#' class='item-link item-content')
+                      .item-inner
+                        .item-title-row
+                          .item-title Geek Squad
+                          .item-after 1m
+                        .item-subtitle 2130 NJ-35, Holmdel, NJ 07733
+                        .item-text Our Agents provide repair, installation and setup services on all kinds of tech...
+                  li
+                    a(href='#' class='item-link item-content')
+                      .item-inner
+                        .item-title-row
+                          .item-title Dr. P.C. Repair & Web...
+                          .item-after 1.2m
+                        .item-subtitle 37 Johnson Terrace, Hazlet, NJ 07734
+                        .item-text Dr. PC Repair can get your computer repaired right the first time and at...
 
-    .view.view-main
-      .navbar
-        .navbar-inner
-          .center.sliding Awesome App
-          .right
-            a(href='#' class='link icon-only open-panel') #[i.icon.icon-bars]
+                  li
+                    a(href='#' class='item-link item-content')
+                      .item-inner
+                        .item-title-row
+                          .item-title MDrepairs | OEM Quality...
+                          .item-after 2m
+                        .item-subtitle 241 Main St, Matawan, NJ 07747
+                        .item-text Our main focus is the quality of our repairs, we ensure this by only using...
 
-      .pages.navbar-through.toolbar-through
-        div(data-page='index' class='page')
-          div.page-content
-            p Page content goes here
-            a(href='about.html') About App
+                  li
+                    a(href='#' class='item-link item-content')
+                      .item-inner
+                        .item-title-row
+                          .item-title Monmouth Stero Center
+                          .item-after 4m
+                        .item-subtitle 450 Board St, Shrewsbury, NJ 07702
+                        .item-text Monmouth Stereo and video has been serving New Jersey for over 40 years...
 
-      .toolbar
-        .toolbar-inner
-          a(href='#' class='link') Link 1
-          a(href='#' class='link') Link 2
+                  li
+                    a(href='#' class='item-link item-content')
+                      .item-inner
+                        .item-title-row
+                          .item-title Affordable Computer Repair
+                          .item-after 8m
+                        .item-subtitle 3091 NJ-35, Hazlet, NJ 07730
+                        .item-text Service for all your multiple computer, server and networking needs...
+
+            .toolbar.tabbar.tabbar-labels
+              .toolbar-inner
+                a(href='#' class='tab-link active')
+                  i.material-icons search
+                  span.tabbar-label Home
+                a(href='#' class='tab-link')
+                  i.material-icons build
+                  span.tabbar-label Repairs
+                a(href='#' class='tab-link')
+                  i.material-icons message
+                  span.tabbar-label Messages
+                a(href='#' class='tab-link')
+                  i.material-icons account_box
+                  span.tabbar-label Settings
 
     script(src='../libs/Framework7/dist/js/framework7.min.js')
     script(src='js/main.min.js')

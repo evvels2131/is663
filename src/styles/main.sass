@@ -13,15 +13,22 @@ body
   max-width: 960px
   margin: 0 auto
 
+hr
+  height: 2px
+  border: none
+  background-image: linear-gradient(to right, $white, $red-dark 80%, $white)
+  margin: 0 auto
+  width: 95%
+
 .main-row-1
   height: 100px
-  background-image: linear-gradient(to top right, $red-light 60%, #41110C)
-  border-bottom: 1px solid $white
+  background-color: $white
 
   .content
     display: flex
-    color: $white
+    color: $red-dark
     letter-spacing: .25em
+    font-weight: 900
 
     .col-1
       flex-grow: 1
@@ -36,7 +43,7 @@ body
 
 .main-row-2
   height: 60px
-  background-color: $red-dark
+  background-color: $white
 
   .content
     display: flex
@@ -51,13 +58,13 @@ body
       background-color: $red-light
       text-align: center
       margin: 10px 50px 5px 50px
-      border: 1px solid white
-      border-radius: .5em
+      border-radius: .1em
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.7)
       transition: transform 0.15s ease-in-out
 
       &:hover
         cursor: pointer
-        transform: scale(1.2) translateY(.75em)
+        transform: scale(1.25)
 
 .main-row-3
   height: 300px

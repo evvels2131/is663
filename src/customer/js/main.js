@@ -21,7 +21,7 @@
 
   // The code below will only be run for the `About` page
   myApp.onPageInit('about', function (page) {
-
+    // some stuff goes here
   });
 
 })();

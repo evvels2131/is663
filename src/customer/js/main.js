@@ -13,11 +13,6 @@
   // `Home` view
   myApp.onPageInit('index', function (page) {
     console.log('home page', page);
-
-    /*var mySearchbar = myApp.searchbar('.searchbar', {
-      searchList: '.list-block-search',
-      searchIn: '.item-title'
-    });*/
   });
 
   myApp.onPageInit('repairs', function (page) {

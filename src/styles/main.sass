@@ -8,6 +8,7 @@ $blue: #2099E3
 
 body
   font: 100% $font-stack
+  background-image: url(../img/background-img.png)
 
 .container
   max-width: 960px
@@ -16,19 +17,17 @@ body
 hr
   height: 2px
   border: none
-  background-image: linear-gradient(to right, $white, $red-dark 80%, $white)
+  background-image: linear-gradient(to right, #F4F4F4, $red-dark 75%, #F4F4F4)
   margin: 0 auto
   width: 95%
 
 .main-row-1
   height: 100px
-  background-color: $white
 
   .content
     display: flex
     color: $red-dark
     letter-spacing: .25em
-    font-weight: 900
 
     .col-1
       flex-grow: 1
@@ -40,10 +39,10 @@ hr
       padding-top: 0px
       line-height: .1em
       text-align: right
+      font-weight: 600
 
 .main-row-2
   height: 60px
-  background-color: $white
 
   .content
     display: flex
@@ -67,8 +66,6 @@ hr
         transform: scale(1.25)
 
 .main-row-3
-  height: 300px
-  background-color: $white
   margin-top: 25px
 
   .content

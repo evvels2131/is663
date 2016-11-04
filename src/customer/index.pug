@@ -13,18 +13,49 @@ html(lang='en')
     link(rel='stylesheet' href='../libs/Framework7/dist/css/framework7.ios.colors.min.css')
 
   body
+    // Views
     .views
+
+      // Main view
       .view.view-main
-        .pages
-          div(data-page='index' class='page navbar-fixed toolbar-fixed')
 
-            .navbar
-              .navbar-inner
-                .center Service Providers
+        // Top navbar
+        .navbar
+          .navbar-inner
+            // Sliding animation on title element
+            .center.sliding Service Providers
 
+        // Pages container
+        .pages.navbar-through.toolbar-through
+
+          // Page, `data-page` contains page name
+          div(data-page='index' class='page')
+
+            // Searchbar
+            form( class='searchbar searchbar-init'
+                  data-search-list='.list-block-search'
+                  data-search-in='.item-subtitle'
+                  data-found='.searchbar-found'
+                  data-not-found='.searchbar-not-found' )
+              .searchbar-input
+                input(type='search' placeholder='Search by location...')
+                a(href='#' class='searchbar-clear')
+              a(href='#' class='searchbar-cancel') Cancel
+
+            .searchbar-overlay
+
+            // Scrollable page content
             .page-content
-              .content-block-title Nearby
-              .list-block.media-list
+              //.content-block-title Nearby
+
+              .content-block.searchbar-not-found
+                .content-block-title No result found
+                .content-block.inset
+                  .content-block-inner.
+                    Oops! Looks like no service providers are your area
+                    of interest, please try a different location!
+
+              .list-block.list-block-search.searchbar-found.media-list
                 ul
                   li
                     a(href='#' class='item-link item-content')
@@ -33,7 +64,9 @@ html(lang='en')
                           .item-title Orada Tech: Phone Repair
                           .item-after 0.8m
                         .item-subtitle 82 Bethany Rd, Hazlet, NJ 07730
-                        .item-text We specialize in repairing mobile phones including Water Damage is a common...
+                        .item-text.
+                          We specialize in reparing mobile phones including water
+                          damage is a common...
                   li
                     a(href='#' class='item-link item-content')
                       .item-inner
@@ -41,7 +74,9 @@ html(lang='en')
                           .item-title Geek Squad
                           .item-after 1m
                         .item-subtitle 2130 NJ-35, Holmdel, NJ 07733
-                        .item-text Our Agents provide repair, installation and setup services on all kinds of tech...
+                        .item-text.
+                          Our Agents provide repair, installation and setup
+                          services on all kinds of tech...
                   li
                     a(href='#' class='item-link item-content')
                       .item-inner
@@ -49,8 +84,9 @@ html(lang='en')
                           .item-title Dr. P.C. Repair & Web...
                           .item-after 1.2m
                         .item-subtitle 37 Johnson Terrace, Hazlet, NJ 07734
-                        .item-text Dr. PC Repair can get your computer repaired right the first time and at...
-
+                        .item-text.
+                          Dr. PC Repair can get your computer repaired right
+                          the first time and at...
                   li
                     a(href='#' class='item-link item-content')
                       .item-inner
@@ -58,8 +94,9 @@ html(lang='en')
                           .item-title MDrepairs | OEM Quality...
                           .item-after 2m
                         .item-subtitle 241 Main St, Matawan, NJ 07747
-                        .item-text Our main focus is the quality of our repairs, we ensure this by only using...
-
+                        .item-text.
+                          Our main focus is the quality of our
+                          repairs, we ensure this by only using...
                   li
                     a(href='#' class='item-link item-content')
                       .item-inner
@@ -67,8 +104,9 @@ html(lang='en')
                           .item-title Monmouth Stero Center
                           .item-after 4m
                         .item-subtitle 450 Board St, Shrewsbury, NJ 07702
-                        .item-text Monmouth Stereo and video has been serving New Jersey for over 40 years...
-
+                        .item-text.
+                          Monmouth Stereo and video has been serving New
+                          Jersey for over 40 years...
                   li
                     a(href='#' class='item-link item-content')
                       .item-inner
@@ -76,22 +114,41 @@ html(lang='en')
                           .item-title Affordable Computer Repair
                           .item-after 8m
                         .item-subtitle 3091 NJ-35, Hazlet, NJ 07730
-                        .item-text Service for all your multiple computer, server and networking needs...
+                        .item-text.
+                          Service for all your multiple computer,
+                          server and networking needs...
+                  li
+                    a(href='#' class='item-link item-content')
+                      .item-inner
+                        .item-title-row
+                          .item-title Smartfix Repairs
+                          .item-after 14m
+                        .item-subtitle 95 Page Ave, Staten Island, NY 10309
+                        .item-text.
+                          We are service providers for most smartphone,
+                          tablet, and computer...
 
-            .toolbar.tabbar.tabbar-labels
-              .toolbar-inner
-                a(href='#' class='tab-link active')
-                  i.material-icons search
-                  span.tabbar-label Home
-                a(href='#' class='tab-link')
-                  i.material-icons build
-                  span.tabbar-label Repairs
-                a(href='#' class='tab-link')
-                  i.material-icons message
-                  span.tabbar-label Messages
-                a(href='#' class='tab-link')
-                  i.material-icons account_box
-                  span.tabbar-label Settings
+        .toolbar
+          .toolbar-inner
+            a(href='index.html' class='link') Home
+            a(href='repairs.html' class='link') Repairs
+            a(href='#' class='link') Notifications
+            a(href='#' class='link') Settings
+
+        //-.toolbar.tabbar.tabbar-labels
+          .toolbar-inner
+            a(href='index.html' class='tab-link')
+              i.material-icons search
+              span.tabbar-label Home
+            a(href='repairs.html' class='tab-link')
+              i.material-icons build
+              span.tabbar-label Repairs
+            a(href='#' class='tab-link')
+              i.material-icons notifications
+              span.tabbar-label Notifications
+            a(href='#' class='tab-link')
+              i.material-icons settings
+              span.tabbar-label Settings
 
     script(src='../libs/Framework7/dist/js/framework7.min.js')
     script(src='js/main.min.js')

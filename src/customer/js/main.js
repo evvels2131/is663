@@ -1,17 +1,8 @@
 (function() {
   'use strict';
 
-  // Initialize app
-  var myApp = new Framework7({
-    onAjaxStart: function (xhr) {
-      myApp.showIndicator();
-    },
-    onAjaxComplete: function(xhr) {
-      myApp.hideIndicator();
-    }
-  });
+  var myApp = new Framework7();
 
-  // If we need to use custom DOM library, let's save it to $$ variable:
   var $$ = Dom7;
 
   // Add view
@@ -19,9 +10,21 @@
     dynamicNavbar: true
   });
 
-  // The code below will only be run for the `About` page
-  myApp.onPageInit('about', function (page) {
-    // some stuff goes here
+  // `Home` view
+  myApp.onPageInit('index', function (page) {
+    console.log('home page', page);
+
+    /*var mySearchbar = myApp.searchbar('.searchbar', {
+      searchList: '.list-block-search',
+      searchIn: '.item-title'
+    });*/
   });
+
+  myApp.onPageInit('repairs', function (page) {
+    console.log('repairs', page);
+  });
+
+
+  // myApp.getCurrentView(index)) <-- use for bottom navigation
 
 })();

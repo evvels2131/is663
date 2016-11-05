@@ -1,21 +1,20 @@
-.pages.navbar-fixed
-  div(data-page='sp-2' class='page with-subnavbar')
-    .navbar
-      .navbar-inner
-        .left
-          a(href='index.html' class='link')
-            i.icon.icon-back
-            span Back
-        .center.sliding Service Provider Details
-        .subnavbar
-          .buttons-row
-            a(href='#details' class='button active tab-link') Details
-            a(href='#reviews' class='button tab-link') Reviews
+.navbar
+  .navbar-inner
+    .left
+      a(href='index.html' class='link')
+        i.icon.icon-back
+        span Back
+    .center.sliding Service Provider Details
+.pages
+  div(data-page='sp2' class='page')
+    .page-content
+      .content-block
+        .buttons-row
+          a(href='#details' class='tab-link active button') Details
+          a(href='#reviews' class='tab-link button') Reviews
 
-    .tabs-swipeable-wrap
       .tabs
-
-        #details.page-content.tab.active
+        #details.tab.active
           .content-block
             .card
               .card-header Geek Squad: Best Buy
@@ -65,9 +64,8 @@
               .col-50
                 a(href='#' class='button button-big button-fill theme-lightblue') Contact Us
 
-        #reviews.page-content.tab
+        #reviews.tab
           .content-block
-
             .card.facebook-card
               .card-header
                 .facebook-avatar

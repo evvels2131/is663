@@ -1,0 +1,30 @@
+.navbar
+  .navbar-inner
+    .left
+      a(href='repairs/repair-1.html' class='link')
+        i.icon.icon-back
+        span Cancel
+    .center.sliding Contact Us
+
+.pages
+  div(data-page='schedule-service' class='page')
+    .page-content
+      .content-block-title Type Your Message Below
+      .list-block.inset
+        ul
+          li.align-top
+            .item-content
+              .item-media #[i.icon.icon-form-comment]
+              .item-inner
+                .item-input
+                  textarea(
+                    placeholder='Hello, I have a question about the repair status!'
+                    style='height: 300px')
+      .content-block
+        .row
+          .col-50
+            a(  href='repairs/repair-1.html'
+                class='button button-big button-fill') Send Message
+          .col-50
+            a(  href='repairs/repair-1.html'
+                class='button button-big button-fill') Cancel

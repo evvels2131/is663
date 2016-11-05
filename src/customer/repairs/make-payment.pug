@@ -1,0 +1,74 @@
+.navbar
+  .navbar-inner
+    .left
+      a(href='repairs/repair-1.html' class='link')
+        i.icon.icon-back
+        span Cancel
+    .center.sliding Payment
+
+.pages
+  div(data-page='make-payment' class='page')
+    .page-content
+      .content-block-title Billing Information
+      .list-block.inset
+        ul
+          li
+            .item-content
+              .item-inner
+                .item-title.label Full Name
+                .item-input
+                  input(type='text' placeholder='John Doe')
+          li
+            .item-content
+              .item-inner
+                .item-title.label Address
+                .item-input
+                  input(type='text' placeholder='25 8th Street')
+          li
+            .item-content
+              .item-inner
+                .item-title.label City
+                .item-input
+                  input(type='text' placeholder='Newark')
+          li
+            .item-content
+              .item-inner
+                .item-title.label State
+                .item-input
+                  input(type='text' placeholder='NJ')
+          li
+            .item-content
+              .item-inner
+                .item-title.label Zip Code
+                .item-input
+                  input(type='text' placeholder='07329')
+
+      .content-block-title Payment Information
+      .list-block.inset
+        ul
+          li
+            .item-content
+              .item-inner
+                .item-title.label Card Number
+                .item-input
+                  input(type='text' placeholder='0123456789')
+          li
+            .item-content
+              .item-inner
+                .item-title.label Expiration Date
+                .item-input
+                  input(type='text' placeholder='08/17')
+          li
+            .item-content
+              .item-inner
+                .item-title.label Security Code
+                .item-input
+                  input(type='text' placeholder='012')
+      .content-block
+        .row
+          .col-50
+            a(  href='repairs/repair-1.html'
+                class='button button-big button-fill') Submit
+          .col-50
+            a(  href='repairs/repair-1.html'
+                class='button button-big button-fill') Cancel

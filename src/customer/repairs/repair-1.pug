@@ -1,0 +1,108 @@
+.navbar
+  .navbar-inner
+    .left
+      a(href='repairs.html' class='link')
+        i.icon.icon-back
+        span Back
+    .center.sliding Repair Details
+
+.pages
+  div(data-page='repair-1' class='page')
+    .page-content
+      .content-block
+        .buttons-row
+          a(href='#info' class='tab-link active button') Information
+          a(href='#history' class='tab-link button') History
+
+      .tabs
+        #info.tab.active
+          .content-block-title DEVICE INFORMATION
+          .list-block.inset
+            ul
+              li.item-content
+                .item-media #[i.material-icons trending_flat]
+                .item-inner
+                  .item-title Category
+                  .item-after Cell Phone
+              li.item-content
+                .item-media #[i.material-icons trending_flat]
+                .item-inner
+                  .item-title Brand
+                  .item-after Apple
+              li.item-content
+                .item-media #[i.material-icons trending_flat]
+                .item-inner
+                  .item-title Model
+                  .item-after iPhone 7 Plus
+              li.item-content
+                .item-media #[i.material-icons trending_flat]
+                .item-inner
+                  .item-title Status
+                  .item-after In Progress
+              li.item-content
+                .item-media #[i.material-icons trending_flat]
+                .item-inner
+                  .item-title Estimated Repair Date
+                  .item-after 11/08/2016
+
+          .content-block-title Service Provider Information
+          .list-block.inset
+            ul
+              li.item-content
+                .item-media #[i.material-icons build]
+                .item-inner
+                  .item-title Orda Tech: Phone Repair
+              li.item-content
+                .item-media #[i.material-icons phone]
+                .item-inner
+                  .item-title Contact Number
+                  .item-after (732) 226-3351
+
+          .content-block-title Issues
+          .list-block.inset
+            ul
+              li.item-content
+                .item-inner
+                  .item-title Broken or cracked screen
+              li.item-content
+                .item-inner
+                  .item-title Water damage
+              li.item-content
+                .item-inner
+                  .item-title Microphone not working
+          .content-block
+            .row
+              .col-50
+                a(href='repairs/make-payment.html' class='button button-big button-fill') Make Payment
+              .col-50
+                a(href='repairs/contact.html' class='button button-big button-fill') Contact Provider
+
+        #history.tab
+          .content-block-title Repair History
+          .list-block.inset
+            ul
+              li.item-content
+                .item-media #[i.material-icons done]
+                .item-inner
+                  .item-title Repair in Progress
+                  .item-after 10/03/2016
+              li.item-content
+                .item-media #[i.material-icons done_all]
+                .item-inner
+                  .item-title Device Diagnosed
+                  .item-after 10/03/2016
+              li.item-content
+                .item-media #[i.material-icons done_all]
+                .item-inner
+                  .item-title Device Arrived
+                  .item-after 10/02/2016
+              li.item-content
+                .item-media #[i.material-icons done_all]
+                .item-inner
+                  .item-title Device Picked Up
+                  .item-after 10/02/2016
+              li.item-content
+                .item-media #[i.material-icons done_all]
+                .item-inner
+                  .item-title Service Repair Request
+                  .item-after 10/01/2016

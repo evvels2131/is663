@@ -1,0 +1,44 @@
+.navbar
+  .navbar-inner
+    .left
+      a(href='repairs/repair-2.html' class='link')
+        i.icon.icon-back
+        span Back
+    .center.sliding Rate
+
+.pages
+  div(data-page='rate' class='page')
+    .page-content
+      .content-block-title Tell us about your experience
+      .list-block.inset
+        ul
+          li.align-top
+            .item-content
+              .item-media #[i.material-icons mode_editf]
+              .item-inner
+                .item-input
+                  textarea(
+                    placeholder='I really liked working with this service provider, everything worked out pretty well. I definitely recommend it to anyone else!'
+                    style='height: 150px')
+          li
+            .item-content
+              .item-media #[i.material-icons stars]
+              .item-inner
+                .item-title.label Rating
+                .item-input
+                  .range-slider
+                    input(type='range' min='0' max='100' value='60' step='0.1')
+          li
+            .item-content
+              .item-media #[i.material-icons check_box]
+              .item-inner
+                .item-title.label Recommend
+                .item-input
+                  label.label-switch
+                    input(type='checkbox')
+                    .checkbox
+          li
+            .item-content
+              .item-media #[i.material-icons insert_photo]
+              .item-inner
+                .item-title.label Insert Photo

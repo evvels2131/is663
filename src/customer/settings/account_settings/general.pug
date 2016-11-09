@@ -1,0 +1,83 @@
+.navbar
+  .navbar-inner
+    .left
+      a(href='customer/settings/settings.html' class='link')
+        i.icon.icon-back
+        span Back
+    .center.sliding General
+
+.pages
+  div(data-page='general' class='page')
+    .page-content
+      .content-block-title Personal Information
+      .list-block.inset
+        ul
+          li
+            .item-content
+              .item-media #[i.material-icons account_box]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='Kent Wilson')
+          li
+            .item-content
+              .item-media #[i.material-icons event]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='09/24/1987')
+          li
+            .item-content
+              .item-media #[i.material-icons phone]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='(732) 193-1929')
+          li
+            .item-content
+              .item-media #[i.material-icons email]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='kwilson@gmail.com')
+          li
+            .item-content
+              .item-media #[i.material-icons edit]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='******************')
+          li
+            .item-content
+              .item-media #[i.material-icons edit]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='******************')
+
+      .content-block-title Address Details
+      .list-block.inset
+        ul
+          li
+            .item-content
+              .item-media #[i.material-icons home]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='323 Lock Street')
+
+          li
+            .item-content
+              .item-media #[i.material-icons local_post_office]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='Newark')
+          li
+            .item-content
+              .item-media #[i.material-icons directions]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='NJ')
+          li
+            .item-content
+              .item-media #[i.material-icons store_mall_directory]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='07101')
+      .content-block
+        .row
+          .col-50 #[a(href='#' class='button button-big button-fill') Save]
+          .col-50 #[a(href='#' class='button button-big button-fill') Cancel]

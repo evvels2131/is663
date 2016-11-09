@@ -19,7 +19,4 @@
     console.log('repairs', page);
   });
 
-
-  // myApp.getCurrentView(index)) <-- use for bottom navigation
-
 })();

@@ -9,106 +9,105 @@
 .pages
   div(data-page='schedule-service' class='page')
     .page-content
+      .content-block-title Device Information
+      .list-block.inset
+        ul
+          li
+            a(href='#' class='item-link smart-select' data-open-in='popup')
+              select(name='category')
+                option(value='cell_phone' selected) Cell Phone
+                option(value='wearable_technology') Wearable Technology
+                option(value='home_audio&entertainment') Home Audio & Entertainment
+                option(value='pcs') PCs
+                option(value='video_games') Video Games
+                option(value='tvs') TVs
+                option(value='office_electronics') Office Electronics
+                option(value='camera&video') Camera & Video
+              .item-content
+                .item-inner
+                  .item-title Category
+                  .item-after Cell Phone
+          li
+            a(href='#' class='item-link smart-select' data-open-in='popup')
+              select(name='brands')
+                option(value='apple' selected) Apple
+                option(value='asus') Asus
+                option(value='blackberry') BlackBerry
+                option(value='htc') HTC
+                option(value='huawei') Huawei
+                option(value='lg') LG
+                option(value='motorola') Motorola
+                option(value='samsung') Samsung
+              .item-content
+                .item-inner
+                  .item-title Brand
+                  .item-after Apple
+          li
+            a(href='#' class='item-link smart-select' data-open-in='popup')
+              select(name='model')
+                option(value='i7p' selected) iPhone 7 Plus
+                option(value='i7') iPhone 7
+                option(value='i6sp') iPhone 6s Plus
+                option(value='i6s') iPhone 6s
+                option(value='i6p') iPhone 6 Plus
+                option(value='i6') iPhone 6
+                option(value='ise') iPhone SE
+              .item-content
+                .item-inner
+                  .item-title Model
+                  .item-after iPhone 7 Plus
+
+      .content-block-title Issues
+      .list-block.inset
+        ul
+          li
+            a(href='#' class='item-link smart-select' data-open-in='popup')
+              select(name='issue' multiple)
+                option(value='issue' selected) Broken or cracked screen
+                option(value='issue') Water damage
+                option(value='issue') Device battery drains quickly
+                option(value='issue') Device noc charging / charges slowly
+                option(value='issue') Microphone not working
+                option(value='issue') Camera not working
+                option(value='issue') Speaker not working
+                option(value='issue') Volume controls not working
+                option(value='issue') Power or home button not working
+              .item-content
+                .item-inner
+                  .item-title Issue
+                  .item-after Broken or cracked screen
+          li.align-top
+            .item-content
+              .item-media
+                i.icon-icon-form-comment
+                .item-inner
+                  .item-title.label Comments
+                  .item-input
+                    textarea
+
+      .content-block-title Service Information
+      .list-block.inset
+        ul
+          li
+            .item-content
+              .item-inner
+                .item-title.label Contact Phone
+                .item-input
+                  input(type='text' placeholder='(123) 456-7890')
+          li
+            .item-content
+              .item-inner
+                .item-title.label Service Date
+                .item-input
+                  input(type='text' placeholder='2016-08-11')
+          li
+            .item-content
+              .item-inner
+                .item-title.label Request Pickup
+                .item-input
+                  label.label-switch
+                    input(type='checkbox')
+                    .checkbox
+
       .content-block
-
-        .content-block-title Device Information
-        .list-block
-          ul
-            li
-              a(href='#' class='item-link smart-select' data-open-in='popup')
-                select(name='category')
-                  option(value='cell_phone' selected) Cell Phone
-                  option(value='wearable_technology') Wearable Technology
-                  option(value='home_audio&entertainment') Home Audio & Entertainment
-                  option(value='pcs') PCs
-                  option(value='video_games') Video Games
-                  option(value='tvs') TVs
-                  option(value='office_electronics') Office Electronics
-                  option(value='camera&video') Camera & Video
-                .item-content
-                  .item-inner
-                    .item-title Category
-                    .item-after Cell Phone
-            li
-              a(href='#' class='item-link smart-select' data-open-in='popup')
-                select(name='brands')
-                  option(value='apple' selected) Apple
-                  option(value='asus') Asus
-                  option(value='blackberry') BlackBerry
-                  option(value='htc') HTC
-                  option(value='huawei') Huawei
-                  option(value='lg') LG
-                  option(value='motorola') Motorola
-                  option(value='samsung') Samsung
-                .item-content
-                  .item-inner
-                    .item-title Brand
-                    .item-after Apple
-            li
-              a(href='#' class='item-link smart-select' data-open-in='popup')
-                select(name='model')
-                  option(value='i7p' selected) iPhone 7 Plus
-                  option(value='i7') iPhone 7
-                  option(value='i6sp') iPhone 6s Plus
-                  option(value='i6s') iPhone 6s
-                  option(value='i6p') iPhone 6 Plus
-                  option(value='i6') iPhone 6
-                  option(value='ise') iPhone SE
-                .item-content
-                  .item-inner
-                    .item-title Model
-                    .item-after iPhone 7 Plus
-
-        .content-block-title Issues
-        .list-block
-          ul
-            li
-              a(href='#' class='item-link smart-select' data-open-in='popup')
-                select(name='issue' multiple)
-                  option(value='issue' selected) Broken or cracked screen
-                  option(value='issue') Water damage
-                  option(value='issue') Device battery drains quickly
-                  option(value='issue') Device noc charging / charges slowly
-                  option(value='issue') Microphone not working
-                  option(value='issue') Camera not working
-                  option(value='issue') Speaker not working
-                  option(value='issue') Volume controls not working
-                  option(value='issue') Power or home button not working
-                .item-content
-                  .item-inner
-                    .item-title Issue
-                    .item-after Broken or cracked screen
-            li.align-top
-              .item-content
-                .item-media
-                  i.icon-icon-form-comment
-                  .item-inner
-                    .item-title.label Comments
-                    .item-input
-                      textarea
-
-        .content-block-title Service Information
-        .list-block
-          ul
-            li
-              .item-content
-                .item-inner
-                  .item-title.label Contact Phone
-                  .item-input
-                    input(type='text' placeholder='(123) 456-7890')
-            li
-              .item-content
-                .item-inner
-                  .item-title.label Service Date
-                  .item-input
-                    input(type='text' placeholder='2016-08-11')
-            li
-              .item-content
-                .item-inner
-                  .item-title.label Request Pickup
-                  .item-input
-                    label.label-switch
-                      input(type='checkbox')
-                      .checkbox
-
         a(href='repairs.html' class='button button-big button-fill theme-lightblue') Schedule Service

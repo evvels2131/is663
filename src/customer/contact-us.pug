@@ -9,26 +9,26 @@
 .pages
   div(data-page='schedule-service' class='page')
     .page-content
+      //.content-block
+      .content-block-title Type Your Message Below
+      .list-block.inset
+        ul
+          li.align-top
+            .item-content
+              .item-media #[i.icon.icon-form-comment]
+              .item-inner
+                .item-input
+                  textarea(
+                    placeholder='Hello, I would like to find out more about your services!'
+                    style='height: 300px')
+
       .content-block
-
-        .content-block-title Type Your Message Below
-        .list-block
-          ul
-            li.align-top
-              .item-content
-                .item-media #[i.icon.icon-form-comment]
-                .item-inner
-                  .item-input
-                    textarea(
-                      placeholder='Hello, I would like to find out more about your services!'
-                      style='height: 300px')
-
-      .row
-        .col-50
-          a(  href='service-providers/sp-1.html'
-              class='button button-big button-fill theme-lightblue'
-              style='margin-left: 10px') Send Message
-        .col-50
-          a(  href='service-providers/sp-1.html'
-              class='button button-big button-fill theme-red'
-              style='margin-right: 10px') Cancel
+        .row
+          .col-50
+            a(  href='service-providers/sp-1.html'
+                class='button button-big button-fill theme-lightblue'
+                style='margin-left: 10px') Send Message
+          .col-50
+            a(  href='service-providers/sp-1.html'
+                class='button button-big button-fill theme-red'
+                style='margin-right: 10px') Cancel

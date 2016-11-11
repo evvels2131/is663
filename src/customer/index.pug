@@ -14,25 +14,14 @@ html(lang='en')
     link(rel='stylesheet' href='styles/main.css')
 
   body
-    // Views
     .views
-
-      // Main view
       .view.view-main
-
-        // Top navbar
         .navbar
           .navbar-inner
-            // Sliding animation on title element
             .center.sliding Service Providers
 
-        // Pages container
         .pages.navbar-through.toolbar-through
-
-          // Page, `data-page` contains page name
           div(data-page='index-main' class='page')
-
-            // Searchbar
             form( class='searchbar searchbar-init'
                   data-search-list='.list-block-search'
                   data-search-in='.item-subtitle'
@@ -45,10 +34,7 @@ html(lang='en')
 
             .searchbar-overlay
 
-            // Scrollable page content
             .page-content
-              //.content-block-title Nearby
-
               .content-block.searchbar-not-found
                 .content-block-title No result found
                 .content-block.inset

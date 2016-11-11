@@ -1,0 +1,27 @@
+.navbar
+  .navbar-inner
+    .left
+      a(href='settings/settings.html' class='link')
+        i.icon.icon-back
+        span Back
+    .center.sliding Report Problem
+
+.pages
+  div(data-page='general' class='page')
+
+    .page-content
+      .content-block-title Feedback
+      .list-block
+        ul
+          li.align-top
+            .item-content
+              .item-media #[i.material-icons insert_comment]
+              .item-inner
+                .item-title.label Message
+                .item-input
+                  textarea(style='height: 250px')
+
+      .content-block
+        .row
+            .col-50 #[a(href='settings/settings.html' class='button button-big button-fill') Submit]
+            .col-50 #[a(href='settings/settings.html' class='button button-big button-fill') Cancel]

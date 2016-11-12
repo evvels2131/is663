@@ -1,0 +1,84 @@
+.navbar
+  .navbar-inner
+    .left
+      a(href='settings/settings.html' class='link')
+        i.icon.icon-back
+        span Back
+    .center.sliding General
+
+.pages
+  div(data-page='general' class='page')
+    .page-content
+      .content-block-title Business Information
+      .list-block.inset
+        ul
+          li
+            .item-content
+              .item-media #[i.material-icons account_box]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='Orada Tech: Phone Repair')
+          li
+            .item-content
+              .item-media #[i.material-icons phone]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='(732) 193-1929')
+          li
+            .item-content
+              .item-media #[i.material-icons email]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='oradatech@gmail.com')
+          li
+            .item-content
+              .item-media #[i.material-icons edit]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='Password')
+          li
+            .item-content
+              .item-media #[i.material-icons edit]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='Repeat Password')
+          li
+            .item-content
+              .item-media #[i.material-icons assignment_turned_in]
+              .item-inner
+                .item-input
+                  input(type='text' value='Certification Submitted')
+
+
+      .content-block-title Address Details
+      .list-block.inset
+        ul
+          li
+            .item-content
+              .item-media #[i.material-icons home]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='195 University Ave')
+
+          li
+            .item-content
+              .item-media #[i.material-icons local_post_office]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='Newark')
+          li
+            .item-content
+              .item-media #[i.material-icons directions]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='NJ')
+          li
+            .item-content
+              .item-media #[i.material-icons store_mall_directory]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='07101')
+      .content-block
+        .row
+          .col-50 #[a(href='settings/settings.html' class='button button-big button-fill') Save]
+          .col-50 #[a(href='settings/settings.html' class='button button-big button-fill') Cancel]

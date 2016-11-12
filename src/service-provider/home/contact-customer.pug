@@ -1,0 +1,28 @@
+.navbar
+  .navbar-inner
+    .left
+      a(href='home/repair-1.html' class='link')
+        i.icon.icon-back
+        span Cancel
+    .center.sliding Contact Customer
+
+.pages
+  div(data-page='contact-customer' class='page')
+    .page-content
+      .content-block-title Type Your Message Below
+      .list-block.inset
+        ul
+          li.align-top
+            .item-content
+              .item-media #[i.material-icons chat]
+              .item-inner
+                .item-input
+                  textarea(
+                    placeholder='Hello, we have got your item and were currently taking care of it. Thanks for your patience!'
+                    style='height: 300px' )
+      .content-block
+        .row
+          .col-50
+            a(href='home/repair-1.html' class='button button-big button-fill') Send Message
+          .col-50
+            a(href='home/repair-1.html' class='button button-big button-fill') Cancel

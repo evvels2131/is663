@@ -1,0 +1,65 @@
+.navbar
+  .navbar-inner
+    .left
+      a(href='home/repair-1.html' class='link')
+        i.icon.icon-back
+        span Cancel
+    .center.sliding Update Service Status
+
+.pages
+  div(data-pages='update-status-repair' class='page')
+    .page-content
+      .content-block-title Service Status
+      .list-block.inset
+        ul
+          li
+            label.label-radio.item-content
+              input(type='radio' name='status' value='val1' checked='checked')
+              .item-inner
+                .item-title Service in Progress
+          li
+            label.label-radio.item-content
+              input(type='radio' name='status' value='val2')
+              .item-inner
+                .item-title Device Diagnosed
+          li
+            label.label-radio.item-content
+              input(type='radio' name='status' value='val3')
+              .item-inner
+                .item-title Device Arrived
+          li
+            label.label-radio.item-content
+              input(type='radio' name='status' value='val4')
+              .item-inner
+                .item-title Device Picked Up
+          li
+            label.label-radio.item-content
+              input(type='radio' name='status' value='val5')
+              .item-inner
+                .item-title Servie Request Accepted
+          li
+            label.label-radio.item-content
+              input(type='radio' name='status' value='val6')
+              .item-inner
+                .item-title Service Completed
+          li
+            label.label-radio.item-content
+              input(type='radio' name='status' value='val7')
+              .item-inner
+                .item-title Device Returned
+
+      .content-block-title Estimated Completion Date
+      .list-block.inset
+        ul
+          li
+            .item-content
+              .item-media #[i.material-icons event]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='20/11/2016')
+      .content-block
+        .row
+          .col-50
+            a(href='home/repair-1.html' class='button button-big button-fill') Submit
+          .col-50
+            a(href='home/repair-1.html' class='button button-big button-fill') Cancel

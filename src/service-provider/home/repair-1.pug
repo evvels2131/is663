@@ -1,0 +1,114 @@
+.navbar
+  .navbar-inner
+    .left
+      a(href='index.html' class='link')
+        i.icon.icon-back
+        span Back
+    .center.sliding Repair Details
+
+.pages
+  div(data-page='repair-1' class='page')
+    .page-content
+      .content-block
+        .buttons-row
+          a(href='#info' class='tab-link active button') Information
+          a(href='#history' class='tab-link button') History
+
+      .tabs
+        #info.tab.active
+          .content-block-title Device Information
+          .list-block.inset
+            ul
+              li.item-content
+                .item-media #[i.material-icons subdirectory_arrow_right]
+                .item-inner
+                  .item-title Category
+                  .item-after Cell Phone
+              li.item-content
+                .item-media #[i.material-icons subdirectory_arrow_right]
+                .item-inner
+                  .item-title Brand
+                  .item-after Apple
+              li.item-content
+                .item-media #[i.material-icons subdirectory_arrow_right]
+                .item-inner
+                  .item-title Model
+                  .item-after iPhone 7 Plus
+              li.item-content
+                .item-media #[i.material-icons subdirectory_arrow_right]
+                .item-inner
+                  .item-title Pick Up Requested
+                  .item-after Yes
+
+          .content-block-title Customer Information
+          .list-block.inset
+            ul
+              li.item-content
+                .item-media #[i.material-icons perm_identity]
+                .item-inner
+                  .item-title Name
+                  .item-after Kent Wilson
+              li.item-content
+                .item-media #[i.material-icons home]
+                .item-inner
+                  .item-title Address
+                  .item-after 323 Lock St, Newark, NJ
+              li.item-content
+                .item-media #[i.material-icons phone]
+                .item-inner
+                  .item-title Phone
+                  .item-after (732) 193-1929
+              li.item-content
+                .item-media #[i.material-icons email]
+                .item-inner
+                  .item-title Email
+                  .item-after kwilson@gmail.com
+
+          .content-block-title Issues
+          .list-block.inset
+            ul
+              li.item-content
+                .item-inner
+                  .item-title Broken or cracked screen
+              li.item-content
+                .item-inner
+                  .item-title Water damage
+              li.item-content
+                .item-inner
+                  .item-title Microphone not working
+          .content-block
+            .row
+              .col-50 #[a(href='home/contact-customer.html' class='button button-big button-fill') Contact Customer]
+              .col-50 #[a(href='#' class='button button-big button-fill' disabled) Reject Request]
+
+        #history.tab
+          .content-block-title Service History
+          .list-block.inset
+            ul
+              li.item-content
+                .item-media #[i.material-icons done]
+                .item-inner
+                  .item-title Repair in Progress
+                  .item-after 10/03/2016
+              li.item-content
+                .item-media #[i.material-icons done_all]
+                .item-inner
+                  .item-title Device Diagnosed
+                  .item-after 10/03/2016
+              li.item-content
+                .item-media #[i.material-icons done_all]
+                .item-inner
+                  .item-title Device Arrived
+                  .item-after 10/02/2016
+              li.item-content
+                .item-media #[i.material-icons done_all]
+                .item-inner
+                  .item-title Device Picked Up
+                  .item-after 10/02/2016
+              li.item-content
+                .item-media #[i.material-icons done_all]
+                .item-inner
+                  .item-title Service Repair Request
+                  .item-after 10/01/2016
+          .content-block
+            p #[a(href='home/update-repair-status.html' class='button button-big button-fill') Update Status Repair]

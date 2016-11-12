@@ -12,7 +12,6 @@
   function hide(id) {
     var iframes = $('.iframes').children();
     var hide = iframes[id];
-    console.log(iframes);
 
     $(iframes).each(function (idx, value) {
       if ($(value).hasClass('hide')) {

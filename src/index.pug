@@ -10,8 +10,6 @@ html(lang='en')
     link(rel='stylesheet' href='libs/roboto-fontface/css/roboto/roboto-fontface.css')
     link(rel='stylesheet' href='styles/main.css')
 
-    script(src='libs/jquery/dist/jquery.min.js')
-
   body
     .main-row-1
       .container
@@ -25,20 +23,24 @@ html(lang='en')
             p Ragsdale, Tory
             p Chhabriya, Lakhan
     hr
-      
+
     .main-row-2
       .container
         .content
           .col
-            p Customer
+            p#customer Customer
           .col
-            p Service Provider
-          .col
-            p Customer Service
+            p#service-provider Service Provider
+
     hr
 
     .main-row-3
       .container
         .content
-          iframe(src='customer/index.html')
+          .iframes
+            iframe(src='customer/index.html')
+            iframe(src='service-provider/index.html' class='hide')
           img(src='img/apple-iphone-5s.svg' alt='iphone 5 image')
+
+    script(src='libs/jquery/dist/jquery.min.js')
+    script(src='js/main.min.js')

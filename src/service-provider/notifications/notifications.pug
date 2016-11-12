@@ -7,5 +7,115 @@
     .page-content
       .content-block
         .buttons-row
-          a(href='#' class='tab-link active button') All
-          a(href='#' class='tab-link button') Messages
+          a(href='#all' class='tab-link active button') All
+          a(href='#messages' class='tab-link button') Messages
+
+      .tabs
+        #all.tab.active
+          .list-block.media-list.inset
+            ul
+              li
+                a(href='notifications/message.html' class='item-link item-content')
+                  .item-inner
+                    .item-title-row
+                      .item-title #[span.theme-new-message Message]
+                      .item-after 14:00
+                    .item-subtitle New message from #[strong Kent Wilson]
+                    .item-text.
+                      Hello, I just want to confirm that my device will be
+                      fixed this Monday. Please let me know if anything changes.
+                      Thanks.
+              li
+                a(href='notifications/message.html' class='item-link item-content')
+                  .item-inner
+                    .item-title-row
+                      .item-title #[span.theme-new-message Message]
+                      .item-after Nov 11, 2016
+                    .item-subtitle New message from #[strong DarnellPierce]
+                    .item-text.
+                      Hello, how's everyting going. I have a broken device that
+                      I would like to fix. Could you give me a quote whenever
+                      you get a chance? Thanks!
+              li
+                a(href='home/repair-2.html' class='item-link item-content')
+                  .item-inner
+                    .item-title-row
+                      .item-title #[span.theme-new-update Update]
+                      .item-after Nov 10, 2016
+                    .item-subtitle New update in #[strong #345678901]
+                    .item-text.
+                      The status of the service has changed to "Completed &
+                      Payment Received."
+              li
+                a(href='notifications/message.html' class='item-link item-content')
+                  .item-inner
+                    .item-title-row
+                      .item-title #[span.theme-new-message Message]
+                      .item-after Nov 1, 2016
+                    .item-subtitle New message from #[strong Kate	Hudson]
+                    .item-text.
+                      Hi, just checking up on the status of the repair. Thanks.
+              li
+                a(href='home/repair-2.html' class='item-link item-content')
+                  .item-inner
+                    .item-title-row
+                      .item-title #[span.theme-new-update Update]
+                      .item-after Oct 18, 2016
+                    .item-subtitle New update in #[strong #45678901234]
+                    .item-text.
+                      The status of the service has changed to "Completed &
+                      Payment Received."
+              li
+                a(href='home/repair-2.html' class='item-link item-content')
+                  .item-inner
+                    .item-title-row
+                      .item-title #[span.theme-new-update Update]
+                      .item-after Oct 10, 2016
+                    .item-subtitle New update in #[strong #4567890123]
+                    .item-text.
+                      The status of the service has changed to "Completed &
+                      Payment Received."
+
+        #messages.tab
+          .list-block.media-list.inset
+            ul
+              li
+                a(href='notifications/message.html' class='item-link item-content')
+                  .item-inner
+                    .item-title-row
+                      .item-title #[span.theme-new-message Message]
+                      .item-after 14:00
+                    .item-subtitle New message from #[strong Kent Wilson]
+                    .item-text.
+                      Hello, I was want to confirm that my device will be
+                      fixed this Monday. Please let me know if anything changes.
+                      Thanks.
+              li
+                a(href='notifications/message.html' class='item-link item-content')
+                  .item-inner
+                    .item-title-row
+                      .item-title #[span.theme-new-message Message]
+                      .item-after Nov 11, 2016
+                    .item-subtitle New message from #[strong DarnellPierce]
+                    .item-text.
+                      Hello, how's everyting going. I have a broken device that
+                      I would like to fix. Could you give me a quote whenever
+                      you get a chance? Thanks!
+              li
+                a(href='notifications/message.html' class='item-link item-content')
+                  .item-inner
+                    .item-title-row
+                      .item-title #[span.theme-new-message Message]
+                      .item-after Nov 1, 2016
+                    .item-subtitle New message from #[strong Kate	Hudson]
+                    .item-text.
+                      Hi, just checking up on the status of the repair. Thanks.
+              li
+                a(href='notifications/message.html' class='item-link item-content')
+                  .item-inner
+                    .item-title-row
+                      .item-title #[span.theme-new-message Message]
+                      .item-after Oct 1, 2016
+                    .item-subtitle New message from #[strong Jim Perkins]
+                    .item-text.
+                      Hi, just checking up on the status of the repair. Thanks.

@@ -1,0 +1,42 @@
+.navbar
+  .navbar-inner
+    .left
+      a(href='notifications/notifications.html' class='link')
+        i.icon.icon-back
+        span Back
+    .center.sliding Message
+
+.pages
+  div(data-page='message' class='page toolbar-fixed')
+    .page-content.message-content
+      .messages
+        .messages-date Monday, Nov 9 #[span 12:58]
+
+        .message.message-with-avatar.message-received
+          .message-name Kent Wilson
+          .message-text.
+            Hello, could you guys come up my device today? Thanks!
+          div(style='background-image:url(../img/man.svg)'
+              class='message-avatar')
+
+        .messages-date Monday, Nov 9 #[span 1:22]
+        .message.message-sent
+          .message-text.
+            Hi Kent, we will be around 1:00 PM today, is that okay with you?
+
+        .message.message-with-avatar.message-received
+          .message-name Kent Wilson
+          .message-text.
+            Great, we will see you then!
+          div(style='background-image:url(../img/man.svg)'
+              class='message-avatar')
+
+        .messages-date Tuesday, Nov 10 #[span 12:58]
+        .message.message-with-avatar.message-received
+          .message-name Kent Wilson
+          .message-text.
+            Hello, I just want to confirm that my device will be
+            fixed this Monday. Please let me know if anything changes.
+            Thanks.
+          div(style='background-image:url(../img/man.svg)'
+              class='message-avatar')

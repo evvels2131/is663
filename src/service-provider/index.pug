@@ -6,7 +6,7 @@ html(lang='en')
     meta(name='apple-mobile-web-app-capable' content='yes')
     meta(name='apple-mobile-web-app-status-bar-style' content='black')
 
-    title Customer
+    title Service Provider
 
     link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
     link(rel='stylesheet' href='../libs/Framework7/dist/css/framework7.ios.min.css')
@@ -18,7 +18,7 @@ html(lang='en')
       .view.view-main
         .navbar
           .navbar-inner
-            .center.sliding Service Providers
+            .center.sliding Repairs
 
         .pages.navbar-through.toolbar-through
           div(data-page='index-main' class='page')
@@ -28,7 +28,7 @@ html(lang='en')
                   data-found='.searchbar-found'
                   data-not-found='.searchbar-not-found' )
               .searchbar-input
-                input(type='search' placeholder='Search by location...')
+                input(type='search' placeholder='Search by repair number...')
                 a(href='#' class='searchbar-clear')
               a(href='#' class='searchbar-cancel') Cancel
 
@@ -39,75 +39,81 @@ html(lang='en')
                 .content-block-title No result found
                 .content-block.inset
                   .content-block-inner.
-                    Oops! Looks like the number you provided was not found...
-                    Please try again!
+                    Oops! Looks like we could not find the repair you're
+                    searching for. Please try again!
 
               .list-block.list-block-search.searchbar-found.media-list.inset
                 ul
                   li
-                    a(href='#' class='item-link item-content')
+                    a(href='#' class='item-link item-content theme-inprogress')
                       .item-inner
                         .item-title-row
                           .item-title iPhone 7 Plus
                           .item-after Nov 01, 2016
-                        .item-subtitle 020103911
+                        .item-subtitle 12345678
                         .item-text.
-                          Broken or craked screen, water damage, microphone not working...
+                          Broken or craked screen, water damage, microphone
+                          not working...
                   li
                     a(href='#' class='item-link item-content theme-inprogress')
                       .item-inner
                         .item-title-row
                           .item-title iPad 2 Mini
-                          .item-after October 28, 2016
-                        .item-subtitle 0480408202
+                          .item-after Oct 28, 2016
+                        .item-subtitle 23456890
                         .item-text.
-                          Power or home button not working, speaker not working...
-                  li
-                    a(href='#' class='item-link item-content theme-inprogress')
-                      .item-inner
-                        .item-title-row
-                          .item-title iPhone SE
-                          .item-after October 27, 2016
-                        .item-subtitle 1030410840
-                        .item-text.
-                          Volume controls not working, speaker not working, microphone not working...
+                          Power or home button not working, speaker not
+                          working...
                   li
                     a(href='#' class='item-link item-content theme-completed')
                       .item-inner
                         .item-title-row
+                          .item-title iPhone SE
+                          .item-after Oct 27, 2016
+                        .item-subtitle 345678901
+                        .item-text.
+                          Volume controls not working, speaker not working,
+                          microphone not working...
+                  li
+                    a(href='#' class='item-link item-content theme-inprogress')
+                      .item-inner
+                        .item-title-row
                           .item-title iPhone 7
                           .item-after Sep 10, 2016
-                        .item-subtitle 1093084810
+                        .item-subtitle 4567890123
                         .item-text.
-                          Broken or craked screen, water damage, microphone not working...
+                          Broken or craked screen, water damage, microphone
+                          not working...
                   li
                     a(href='#' class='item-link item-content theme-completed')
                       .item-inner
                         .item-title-row
                           .item-title iPad Air 2
                           .item-after Aug 28, 2016
-                        .item-subtitle 1001801048
+                        .item-subtitle 45678901234
                         .item-text.
-                          Power or home button not working, speaker not working...
+                          Power or home button not working, speaker not
+                          working...
                   li
                     a(href='#' class='item-link item-content theme-completed')
                       .item-inner
                         .item-title-row
                           .item-title Samsung Glaxy S5
-                          .item-after July 1, 2016
-                        .item-subtitle 2975027021
+                          .item-after Jul 1, 2016
+                        .item-subtitle 56789012345
                         .item-text.
-                          Volume controls not working, speaker not working, microphone not working..
+                          Volume controls not working, speaker not working,
+                          microphone not working...
 
         .toolbar.tabbar.tabbar-labels
           .toolbar-inner
             a(href='index.html' class='link active')
               i.icon.material-icons build
-              span.tabbar-label Repairs
-            a(href='#' class='link')
+              span.tabbar-label Home
+            a(href='notifications/notifications.html' class='link')
               i.material-icons notifications
               span.tabbar-label Notifications
-            a(href='#' class='link')
+            a(href='settings/settings.html' class='link')
               i.material-icons settings
               span.tabbar-label Settings
 

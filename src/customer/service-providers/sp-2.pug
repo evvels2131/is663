@@ -31,13 +31,26 @@
                   .row
                     .col-20 #[i.material-icons link]
                     .col-80 stores.bestbuy.com
-              .card-footer
-                div(class='star-ratings' style='width: 100%; text-align: right')
-                  i.material-icons star
-                  i.material-icons star
-                  i.material-icons star
-                  i.material-icons star
-                  i.material-icons star_half
+            .card
+              .card-content
+                .card-content-inner
+                  .card-content-inner-ratings
+                    .row.row1
+                      .col1 #[span.rating 4.5]
+                      .col2
+                          i.material-icons star
+                          i.material-icons star
+                          i.material-icons star
+                          i.material-icons star
+                          i.material-icons star_border
+                      .col3 #[strong 82] reviews
+                    .row.row2
+                      .col1
+                        p #[span 95%] Jobs Completed
+                        p #[span 97%] On Time
+                      .col2
+                        p #[span 80%] On Budget
+                        p #[span 85%] Repeat Hire Rate
 
             .card
               .card-header About

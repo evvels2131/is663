@@ -30,13 +30,26 @@
                   .row
                     .col-20 #[i.material-icons link]
                     .col-80 drpcrepair.com
-              .card-footer
-                div(class='star-ratings' style='width: 100%; text-align: right')
-                  i.material-icons star
-                  i.material-icons star
-                  i.material-icons star
-                  i.material-icons star
-                  i.material-icons star
+            .card
+              .card-content
+                .card-content-inner
+                  .card-content-inner-ratings
+                    .row.row1
+                      .col1 #[span.rating 5]
+                      .col2
+                          i.material-icons star
+                          i.material-icons star
+                          i.material-icons star
+                          i.material-icons star
+                          i.material-icons star
+                      .col3 #[strong 10] reviews
+                    .row.row2
+                      .col1
+                        p #[span 100%] Jobs Completed
+                        p #[span 99%] On Time
+                      .col2
+                        p #[span 85%] On Budget
+                        p #[span 65%] Repeat Hire Rate
 
             .card
               .card-header About

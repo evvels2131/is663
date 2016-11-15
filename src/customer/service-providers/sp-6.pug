@@ -31,13 +31,26 @@
                   .row
                     .col-20 #[i.material-icons link]
                     .col-80 acms.info
-              .card-footer
-                div(class='star-ratings' style='width: 100%; text-align: right')
-                  i.material-icons star
-                  i.material-icons star
-                  i.material-icons star
-                  i.material-icons star
-                  i.material-icons star_border
+            .card
+              .card-content
+                .card-content-inner
+                  .card-content-inner-ratings
+                    .row.row1
+                      .col1 #[span.rating 4]
+                      .col2
+                          i.material-icons star
+                          i.material-icons star
+                          i.material-icons star
+                          i.material-icons star
+                          i.material-icons star_border
+                      .col3 #[strong 65] reviews
+                    .row.row2
+                      .col1
+                        p #[span 95%] Jobs Completed
+                        p #[span 99%] On Time
+                      .col2
+                        p #[span 89%] On Budget
+                        p #[span 50%] Repeat Hire Rate
 
             .card
               .card-header About

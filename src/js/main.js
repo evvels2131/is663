@@ -2,24 +2,29 @@
   'use strict';
 
   $('#customer').click(function () {
-    hide(1);
+    show(0);
   });
 
   $('#service-provider').click(function () {
-    hide(0);
+    show(1);
   });
 
-  function hide(id) {
+  $('#registration-show').click(function () {
+    show(2);
+  });
+
+
+  function show(id) {
     var iframes = $('.iframes').children();
-    var hide = iframes[id];
+    var show = iframes[id];
 
     $(iframes).each(function (idx, value) {
-      if ($(value).hasClass('hide')) {
-        $(value).removeClass('hide');
+      if (!$(value).hasClass('hide')) {
+        $(value).addClass('hide');
       }
     });
 
-    $(hide).addClass('hide');
+    $(show).removeClass('hide');
   }
 
 })();

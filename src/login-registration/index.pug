@@ -1,0 +1,51 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui')
+    meta(name='apple-mobile-web-app-capable' content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style' content='black')
+
+    title Login & Registration
+
+    link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    link(rel='stylesheet' href='../libs/Framework7/dist/css/framework7.ios.min.css')
+    link(rel='stylesheet' href='../libs/Framework7/dist/css/framework7.ios.colors.min.css')
+    link(rel='stylesheet' href='styles/main.css')
+
+  body
+    .views
+      .view.view-main
+        .navbar
+          .navbar-inner
+            .center.sliding GETTECH
+
+        .pages.navbar-through
+          div(data-page='index-main' class='page')
+            .page-content
+              .login-credentials
+                .list-block.inset
+                  ul
+                    li
+                      .item-content
+                        .item-media #[i.material-icons account_box]
+                        .item-inner
+                          .item-input
+                            input(type='text' placeholder='Email Address')
+                    li
+                      .item-content
+                        .item-media #[i.material-icons border_color]
+                        .item-inner
+                          .item-input
+                            input(type='password' placeholder='Password')
+                .content-block
+                  .action-buttons
+                    .row
+                      .col-50
+                        a(href='#' class='button button-big button-round') Login
+                      .col-50
+                        a(href='register.html' class='button button-big button-round') Register
+
+
+    script(src='../libs/Framework7/dist/js/framework7.min.js')
+    script(src='js/main.min.js')

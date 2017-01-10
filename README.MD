@@ -6,7 +6,7 @@
 ### Final Project Description
 <p>The goal was to come up with an idea for a system and/or a mobile application. Our application is similar to serviecs such as Thumbtack in a sense that it allows users to search for local service providers and schedule electronic repairs based on information found on the application.</p>
 
-#### Link
+### Link
 * [Final Prototype](https://goto1.github.io/is663/docs/)
 
 

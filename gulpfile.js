@@ -16,7 +16,7 @@ const atImport = require('postcss-import');
 
 const dist = { path: './docs' };
 const src = {
-  js: './src/**/.js',
+  js: './src/**/*.js',
   sass: './src/**/*.sass',
   pug: './src/**/*.pug',
 };

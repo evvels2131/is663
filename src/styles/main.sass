@@ -1,3 +1,5 @@
+@import 'normalize.css'
+
 $font-stack: 'Roboto', Helvetica, sans-serif
 
 $red-dark: #8C2418
@@ -9,6 +11,7 @@ $blue: #2099E3
 body
   font: 100% $font-stack
   background-image: url(../img/background-img.png)
+  min-width: 790px
 
 .container
   max-width: 960px
@@ -49,6 +52,7 @@ hr
 
   .content
     display: flex
+    justify-content: space-around
     color: white
     letter-spacing: .15em
 
@@ -56,7 +60,8 @@ hr
       margin: 10px
 
     .col
-      flex-grow: 1
+      flex-basis: 290px
+      flex-shrink: 0
       background-color: $red-light
       text-align: center
       margin: 10px 100px 5px 100px
@@ -70,18 +75,21 @@ hr
 
 .main-row-3
   margin-top: 25px
+  display: flex
+  justify-content: center
 
   .content
     text-align: center
     position: relative
+    width: 455px
 
     img
       width: 450px
 
     iframe
       position: absolute
-      top: 125px
-      left: 277px
+      top: 14%
+      left: 5.5%
       width: 410px
       height: 690px
       border: 1px solid black

@@ -13,7 +13,6 @@
     show(2);
   });
 
-
   function show(id) {
     var iframes = $('.iframes').children();
     var show = iframes[id];

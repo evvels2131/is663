@@ -1,64 +1,71 @@
 'use strict';
 
 const browserSync = require('browser-sync').create();
+const cssnano = require('cssnano');
 const gulp = require('gulp');
-const autoprefixer = require('gulp-autoprefixer');
+const cached = require('gulp-cached');
 const plumber = require('gulp-plumber');
+const postcss = require('gulp-postcss');
 const pug = require('gulp-pug');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
+const cssNext = require('postcss-cssnext');
+const atImport = require('postcss-import');
 
-const paths = {
-  js: './src/**/*.js',
+const dist = { path: './docs' };
+const src = {
+  js: './src/**/.js',
   sass: './src/**/*.sass',
   pug: './src/**/*.pug',
-
-  dist: './dist',
 };
 
-gulp.task('pug', function() {
-  return gulp.src(paths.pug)
+gulp.task('pug', () => {
+  return gulp.src(src.pug)
     .pipe(plumber())
+    .pipe(cached('pug'))
     .pipe(pug())
-  .pipe(gulp.dest(paths.dist))
+    .pipe(gulp.dest(dist.path))
     .pipe(browserSync.stream());
 });
 
-gulp.task('sass', function() {
-  return gulp.src(paths.sass)
+gulp.task('sass', () => {
+  const preprocessor = [
+    atImport(),
+    cssNext({ browsers: ['last 1 version'] }),
+    cssnano({ autoprefixer: false }),
+  ];
+
+  return gulp.src(src.sass)
     .pipe(plumber())
+    .pipe(cached('css'))
+    .pipe(sass()).on('error', sass.logError)
+    .pipe(postcss(preprocessor))
+    .pipe(gulp.dest(dist.path))
+    .pipe(browserSync.stream());
+});
+
+gulp.task('js', () => {
+  return gulp.src(src.js)
+    .pipe(plumber())
+    .pipe(cached('js'))
     .pipe(sourcemaps.init())
-    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-    .pipe(autoprefixer())
-    .pipe(sourcemaps.write())
-  .pipe(gulp.dest(paths.dist))
-    .pipe(browserSync.stream());
-});
-
-gulp.task('js', function(cb) {
-  return gulp.src(paths.js)
-    .pipe(plumber())
     .pipe(uglify())
-    .pipe(rename({
-      extname: '.min.js'
-    }))
-  .pipe(gulp.dest(paths.dist))
+    .pipe(rename({ extname: '.min.js' }))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(dist.path))
     .pipe(browserSync.stream());
 });
 
-gulp.task('serve', ['pug', 'sass', 'js'], function() {
-  browserSync.init({
-    server: './dist',
-    open: false
-  });
+gulp.task('server', ['pug', 'sass', 'js'], () => {
+  browserSync.init({ server: './docs', open: false });
 
-  gulp.watch(paths.pug, ['pug']);
-  gulp.watch(paths.sass, ['sass']);
-  gulp.watch(paths.js, ['js']);
+  gulp.watch(src.pug, ['pug']);
+  gulp.watch(src.sass, ['sass']);
+  gulp.watch(src.js, ['js']);
 });
 
-gulp.task('default', ['serve'], function() {
+gulp.task('default', ['server'], () => {
   console.log('running...');
 });
